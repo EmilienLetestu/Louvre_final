@@ -1,0 +1,1425 @@
+*
+{
+    margin: 0;
+}
+
+html, body
+{
+    height: 100%;
+}
+.page-wrap
+{
+    min-height: 100%;
+    margin-bottom: -150px;
+}
+.page-wrap:after
+{
+    content: "";
+    display: block;
+}
+
+.invalid_name,.invalid_surname
+{
+    color: #F54041;
+}
+
+.btn
+{
+  background-color: #FFFFFF !important;
+}
+
+p
+{
+ font-family: 'Roboto', sans-serif;
+}
+
+.ticket_table .btn:hover
+{
+    background-color: #FFFFFF;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.btn:hover
+{
+    background-color: #FFFFFF !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.btn-success
+{
+    color: #00B232 !important;
+}
+
+.btn-primary
+{
+    color: #0b60be; !important;
+}
+
+.btn-primary:hover
+{
+    color: #0b60be; !important;
+}
+
+.btn-warning
+{
+    color: #EC971F;
+}
+
+.btn-warning:hover
+{
+    color: #EC971F;
+}
+
+
+.fa-pencil
+{
+    color: #EC971F;
+}
+
+.fa-plus,.fa-check
+{
+    color: #0b60be;
+}
+
+.fa-trash
+{
+    color: #F54041;
+}
+
+.fa-credit-card
+{
+    color: #00B232;
+}
+.ticket_form input
+{
+    box-shadow: 0 0 8px #9b9b9b;
+}
+
+#banner img
+{
+    width: 100%;
+    background:fixed center no-repeat;
+    margin-top: 3px;
+    height: 200px;
+}
+
+.jumbotron
+{
+    background-color: transparent !important;
+}
+/*----------------------------------------------*/
+.ticket_list
+{
+    border-bottom: solid black 1px;
+}
+
+#booking_title,#modify_title,#charge_title
+{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+#booking_title
+{
+    font-weight: 700;
+}
+
+.success
+{
+    background-color: #00B232;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top:6.5%;
+    box-shadow:1px 1px 2px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.form_errors ul
+{
+    color: #F54041;
+}
+.error
+{
+    background-color: #F54041;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top:6.5%;
+    box-shadow:1px 1px 2px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.message
+{
+    background-color: #F54041;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+/*--------------------home--------------------------*/
+.navbar
+{
+    margin-bottom: 0;
+    background-color: #190e14 !important;
+}
+.navbar-brand
+{
+   color: #FFFFFF;
+}
+
+#anchor_home
+{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid #FFFAC0;
+    padding: 5px 15px;
+}
+
+#anchor_home i
+{
+    color: #FFFAC0 ;
+}
+.navbar-brand:hover
+{
+    color: #FFFAC0;
+}
+
+.parallax
+{
+
+    min-height: 900px;
+    background:fixed center no-repeat url('louvre_parralax.jpg');
+    background-size: cover;
+}
+
+#top_layer
+{
+    background-color: #dddddd;
+    height: 650px;
+}
+
+#title
+{
+    position: absolute;
+    margin-top: 23%;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+#title h1
+{
+    font-size: 4em;
+    font-weight: bolder;
+    color: rgb(255,250,192);
+    font-family: 'Magra', sans-serif;
+    text-shadow: 6px 6px 2px rgb(25,14,20);
+}
+
+#intro_title
+{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 4em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.intro
+{
+    font-size: 1.3em;
+}
+
+.intro p
+{
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+#pricing_title,#availability_title
+{
+    font-size: 3em;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.info i
+{
+    font-size: 15px;
+    color: #F48024;
+    margin: 5%;
+}
+
+.info
+{
+    height:600px;
+}
+
+ .info input
+ {
+     margin-top: 2%;
+     box-shadow: 0 0 8px #9b9b9b;
+     width: 77%;
+ }
+
+ .info .form-group
+ {
+     margin-left: 22%;
+ }
+
+ table
+ {
+     border-collapse: collapse;
+     box-shadow: 0 0 8px #9b9b9b;
+     color: rgba(0, 0, 0, 0.85);
+     font-size: 14px;
+ }
+ th
+ {
+     background: #373737;
+     color: #fff;
+     font-weight: 400;
+ }
+
+ .pricing_type, .action_type
+ {
+     text-align: center;
+ }
+
+#disclaimer
+{
+    font-size: 1em;
+    color: #F54041;
+    margin-top: 4%;
+}
+
+#test_date
+{
+    color: #0b60be;
+}
+
+#link_to_booking
+{
+    color: #00B232;
+}
+
+.disclaimer_info
+{
+    background-color: #DDDDDD;
+    height: 150px;
+}
+
+.disclaimer_info p
+{
+    padding-top: 1%;
+    text-align: justify;
+    font-size: 1em;
+}
+/*--------------footer-----------------*/
+
+.footer
+{
+    background-color: #190e14 ;
+}
+
+.footer .btn
+{
+    background-color: #FFFAC0;
+}
+
+.footer .btn:hover
+{
+    background-color: #190e14;
+    color: #FFFAC0;
+}
+
+#legal_notice
+{
+    text-decoration: none;
+    color: #FFFAC0;
+}
+
+#legal_notice:hover
+{
+    color: #ffffff;
+}
+
+.follow
+{
+    color: #FFFAC0;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+.footer, .page-wrap:after
+{
+
+    height: 150px;
+}
+
+.footer
+{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-group
+{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+
+}
+/*------------------booking page--------------------*/
+#booking_title
+{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin-bottom: 2%;
+    margin-top: -2%;
+}
+.start_order
+{
+    border-style: dashed;
+    border-color: #C8C8C8 ;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.start_order h2
+{
+    margin-top: 2%;
+    color: #6a6a6a;
+    font-weight: 900;
+}
+
+.start_order i
+{
+    margin-top: 10%;
+    padding-bottom: 12%;
+    color: #6a6a6a;
+}
+
+.ticket_form input
+{
+    margin-bottom: 3%;
+    box-shadow: 0 0 8px #9b9b9b;
+}
+
+.ticket_form
+{
+    min-height: 400px;
+}
+
+.ticket_form .checkbox
+{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: -3%;
+}
+
+table a
+{
+    width: 100%;
+}
+
+.ticket_table table
+{
+    margin-top: 3%;
+}
+
+.add button
+{
+   position: relative;
+    left: 100px;
+}
+
+#no_more_tickets
+{
+    color: #F48024;
+    margin-top:5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.action_type .btn-success
+{
+    width: 250%;
+}
+.ticket_table tfoot th:last-child
+{
+    background-color: #FFFFFF;
+    border-top: hidden;
+}
+#ticket_dob select
+{
+    width: 32.8%;
+}
+
+/*------------------check_out page--------------------*/
+
+.card_input
+{
+    margin-left: -2.5%;
+}
+
+#card_data_title
+{
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.stripe_form
+{
+    margin-left: 35%;
+    height: 450px;
+}
+
+.stripe_form label
+{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.stripe_form button
+{
+    margin-top: 5%;
+}
+
+.stripe_form input
+{
+    box-shadow: 0 0 8px #9b9b9b;
+}
+
+#charge_title
+{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin-bottom: 2%;
+    margin-top: -2%;
+}
+
+.errors
+{
+    color: #F54041;
+    text-align: center;
+}
+
+#processing
+{
+    color: #F48024;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+/*--------------------------modify_page------------------------------*/
+
+#modify_title
+{
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin-top: -2%;
+}
+
+.modify_form
+{
+    min-height: 400px;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}
+
+.modify_form input
+{
+    box-shadow: 0 0 8px #9b9b9b;
+    margin-bottom: 3%;
+}
+
+#ticket_to_modify
+{
+    margin-top: -2%;
+    float: none;
+    margin-left: 30%;
+}
+
+#quit_mod
+{
+    color: #EC971F;
+}
+
+#mod_submit
+{
+    color: #0b60be;
+}
+
+/*------------------custom error404------------------------------*/
+
+#error404_title
+{
+    margin-top: 10%;
+    text-align: center;
+}
+
+#error404_subtitle
+{
+    margin-top: 10%;
+    text-align: center;
+}
+
+#error404_message
+{
+    font-size: 1.8em;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------media queries------------------------------------------------------*/
+
+@media only screen and (min-width : 1824px)
+{
+    .parallax
+    {
+        min-height: 1000px;
+    }
+
+    #info_availability
+    {
+        margin-bottom: 5%;
+    }
+
+    #submit_ticket
+    {
+        margin-left: 40%;
+    }
+
+    #booking_title
+    {
+        margin-bottom: 4%;
+        margin-top: -1%;
+    }
+
+    .ticket_table
+    {
+        margin-top: -0.5%;
+    }
+
+    .modify_form
+    {
+        margin-bottom: 5%;
+    }
+
+    #modify_title
+    {
+        margin-top: -0.5%;
+    }
+
+    .success,
+    .error
+    {
+        top: 4.8%;
+    }
+
+    #link_to_booking
+    {
+        margin-left: 14.5%;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #banner img {
+        margin-top: 6.6%;
+        height: 50px;
+    }
+
+    .footer, .page-wrap::after {
+        height: auto;
+    }
+
+    .footer {
+        font-size: 0.8em;
+        padding: 5%;
+    }
+
+    .form_errors {
+        font-size: 0.8em;
+    }
+
+    #legal_notice {
+        margin-top: 10px;
+    }
+
+    .close
+    {
+        position: relative;
+        top: -25px;
+        right:-45px;
+        float: none;
+        font-size: 15px;
+    }
+
+    .success,
+    .error
+    {
+        font-size: 0.8em;
+        padding-bottom: 10px;
+        top: 10%;
+    }
+
+    /*--------------------home page----------------*/
+    #title h1 {
+        font-size: 2em;
+        margin-top: 40%;
+    }
+
+    #top_layer {
+        height: 1500px;
+    }
+
+    #intro_title {
+        margin-top: -0.1%;
+        font-size: 1.5em;
+    }
+
+    .info {
+        height: auto;
+    }
+
+    .info input, .info label {
+        margin-left: -20%;
+        width: 100%;
+    }
+
+    #link_to_booking {
+        margin-top: 7%;
+        margin-left: -10%;
+    }
+
+    #pricing_title, #availability_title {
+        font-size: 2em;
+    }
+
+    #info_availability .form_errors {
+        position: relative;
+        left: -20%;
+    }
+
+    #anchor_home i {
+        font-size: 1em;
+    }
+
+    .disclaimer_info {
+        height: auto;
+    }
+
+    .disclaimer_info p {
+        font-size: 0.7em;
+    }
+
+    /*------------booking page---------*/
+    #booking_title {
+        font-size: 1.5em;
+        margin-bottom: 10%;
+    }
+
+    .add button {
+        top: 10px;
+    }
+
+    .start_order h2 {
+        font-size: 1.1em;
+    }
+
+    .start_order {
+        padding: 5%;
+    }
+
+    .start_order i {
+        padding-bottom: 3%;
+    }
+
+    .action_type .btn-success
+    {
+        width: 100%;
+    }
+
+    /*-----------modify ticket-------------*/
+    #modify_title {
+        font-size: 2em;
+        margin-top: -10%;
+    }
+
+    #ticket_to_modify {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .modify_form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modify_form .btn {
+        font-size: 0.8em;
+    }
+
+    .modify_form a {
+        position: relative;
+        left: 150px;
+        top: -29px;
+    }
+
+    /*-----------check out-------------*/
+    #charge_title {
+        font-size: 1.8em;
+    }
+
+    .stripe_form {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .stripe_form #card_data input {
+        margin-left: -5%;
+        width: 110%;
+        margin-bottom: -10%;
+    }
+
+    .card_input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 12%;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 767px)
+{
+    #banner img {
+        margin-top: 5.8%;
+        height: 50px;
+    }
+
+    .btn
+    {
+        font-size: 0.8em;
+    }
+
+    .footer, .page-wrap::after
+    {
+        height: auto;
+    }
+
+    .footer
+    {
+        font-size: 0.7em;
+        padding: 5%;
+    }
+
+    .form_errors,
+    .invalid_surname,
+    .invalid_name
+    {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    #legal_notice
+    {
+        margin-top: 15px;
+    }
+
+    .disclaimer_info
+    {
+        height: auto;
+        margin-bottom: -2.7%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .disclaimer_info p
+    {
+        font-size: 0.8em;
+    }
+
+    .close{
+        right: -80px;
+    }
+
+    .success,
+    .error
+    {
+        font-size: 0.8em;
+        padding-bottom: 10px;
+        top: 10%;
+    }
+    /*--------------------home page----------------*/
+    #title h1
+    {
+        font-size: 2.5em;
+        margin-top: 50%;
+    }
+
+    #disclaimer
+    {
+        font-size: 0.8em;
+        text-align: center;
+        padding-top: 13%;
+    }
+
+    #top_layer
+    {
+        height:auto;
+        padding-bottom: 2%;
+    }
+
+    #intro_title
+    {
+        margin-top: -0.1%;
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
+
+    .intro p
+    {
+        font-size: 0.9em;
+    }
+
+    .info
+    {
+        height: auto;
+        margin-bottom: 6%;
+    }
+
+    .info input, .info label
+    {
+        margin-left: -16%;
+        width: 100%;
+    }
+
+
+    #test_date
+    {
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    #link_to_booking
+    {
+        margin-top: 7%;
+        margin-left: -15%;
+        min-width: 90%;
+    }
+
+    #pricing_title, #availability_title {
+        font-size: 2em;
+    }
+
+    #info_availability .form_errors {
+        position: relative;
+        left: -20%;
+    }
+
+    #anchor_home i {
+        font-size: 1em;
+    }
+    /*------------booking page---------*/
+    #booking_title {
+        font-size: 1.2em;
+        margin-bottom: 10%;
+    }
+
+    .ticket_form
+    {
+        height: auto;
+    }
+
+    .add button {
+        top: -40px;
+        left: 280px;
+    }
+
+    .start_order h2 {
+        font-size: 1.1em;
+    }
+
+    .start_order {
+        padding: 5%;
+        margin-top: -10%;
+        margin-bottom: 10%;
+    }
+
+    .start_order i {
+        padding-bottom: 3%;
+    }
+
+    .action_type .btn-success
+    {
+        width: 100%;
+    }
+
+    .ticket_table
+    {
+        margin-top: -10%;
+    }
+    /*-----------modify ticket-------------*/
+    #modify_title {
+        font-size: 2em;
+        margin-top: -10%;
+    }
+
+    #ticket_to_modify {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .modify_form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modify_form .btn {
+        font-size: 0.8em;
+        margin-top: 3%;
+    }
+
+    .modify_form a {
+        position: relative;
+        left: 40px;
+    }
+
+    /*-----------check out-------------*/
+    #charge_title {
+        font-size: 1.8em;
+        margin-top: -10%;
+    }
+
+    .stripe_form {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .stripe_form #card_data input {
+        margin-left: -5%;
+        width: 110%;
+        margin-bottom: -10%;
+    }
+
+    .card_input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10.5%;
+    }
+
+}
+@media screen and (max-width: 767px)
+{
+    /*-------------table--------------*/
+    .ticket_table .btn:hover {
+        background-color: #FFFFFF;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.05);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.05);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.05);
+        transition: all 200ms ease-in;
+        transform: scale(1.05);
+    }
+
+    #info_pricing table,
+    .ticket_table table,
+    #ticket_to_modify table {
+        width: 100%;
+    }
+
+    #info_pricing thead,
+    .ticket_table thead,
+    #ticket_to_modify thead {
+        display: none;
+    }
+
+    #info_pricing tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+
+    #info_pricing tr td:first-child,
+    .ticket_table tr td:first-child,
+    .ticket_table tfoot th:nth-child(odd) {
+        box-shadow: 0 0 18px #819093;
+        background: #000000;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    #info_pricing tbody td,
+    .ticket_table tbody td,
+    #ticket_to_modify tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    .ticket_table tfoot tr {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .ticket_table tfoot th {
+        text-align: center;
+    }
+
+    .ticket_table tfoot th:nth-child(even),
+    .ticket_table tfoot th:last-child {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    #ticket_to_modify .table td:first-child
+    {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    #error404_title
+    {
+        font-size: 1.5em;
+        margin-top: 20%;
+    }
+
+    #error404_subtitle
+    {
+        margin-top: 20%;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    #error404_message
+    {
+        font-size: 1em;
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+
+    #error404_message a
+    {
+        margin-top: 5%;
+    }
+
+    #ticket_dob
+    {
+        display: flex;
+    }
+
+    .info .form-group
+    {
+        margin-left: 25%;
+    }
+
+    .info i
+    {
+        margin: 1%;
+    }
+
+    #processing
+    {
+        margin-left: 43%;
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .form_errors,
+    .invalid_name,
+    .invalid_surname,
+    #disclaimer {
+        font-size: 0.9em;
+    }
+
+    #banner img {
+        margin-top: 0.4%;
+        height: 150px;
+        margin-bottom: 5%;
+    }
+
+    .success,
+    .error
+    {
+        top:4.8%;
+        font-size: 1em;
+        float: right;
+    }
+
+    /*--------------------home page----------------*/
+    #title h1 {
+        margin-top: 39%;
+        font-size: 3em;
+    }
+
+    .parallax {
+        min-height: 1100px;
+    }
+
+    #anchor_home i {
+        font-size: 1.5em;
+    }
+
+    #intro_title {
+        font-size: 2.5em;
+    }
+
+    #top_layer {
+        height: auto;
+        padding-bottom: 4%;
+    }
+
+    .info {
+        height: auto;
+    }
+
+    #info_pricing,
+    #info_availability {
+        width: 100%;
+    }
+
+    #pricing_title, #availability_title {
+        font-size: 2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #disclaimer {
+        text-align: center;
+    }
+
+    #info_availability input {
+        width: 100%;
+        margin-left: -20%;
+    }
+
+    #info_availability label {
+        margin-left: -20%;
+    }
+
+    #info_availability .form_errors {
+        position: relative;
+        left: -20%
+    }
+
+    #test_date {
+        margin-left: -20%;
+    }
+
+    .info .form-group
+    {
+        margin-left: 30%;
+    }
+
+    #link_to_booking {
+        position: relative;
+        top: 0;
+        left: 130px;
+    }
+
+    .disclaimer_info {
+        height: auto;
+        margin-top: 5%;
+
+    }
+
+    /*------------booking page---------*/
+    #booking_title {
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+
+    #form_section,
+    .start_order,
+    .ticket_table {
+        width: 100%;
+    }
+
+    .add button {
+        left: 130px;
+    }
+
+    /*-----------modify ticket-------------*/
+    #modify_title {
+        font-size: 2em;
+        margin-top: -10%;
+    }
+
+    #ticket_to_modify {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .modify_form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /*-----------check-out-------------*/
+    .stripe_form {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 6%;
+        height: auto;
+    }
+
+    #error404_title
+    {
+        margin-top: 35%;
+    }
+
+    #error404_message
+    {
+        margin-bottom: 30%;
+    }
+
+    #error404_subtitle
+    {
+        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+}
+@media screen and (min-width:350px) and (max-width: 767px) and (orientation: landscape)
+{
+    .parallax
+    {
+        min-height: 600px;
+    }
+
+    #title h1
+    {
+        margin-top: 2%;
+    }
+
+    #test_date
+    {
+        margin-left: -16%;
+    }
+
+    #link_to_booking
+    {
+        margin-left: 22%;
+        margin-top: 2%;
+    }
+
+    .add button
+    {
+        left: 560px;
+        top: -40px;
+    }
+
+     #banner img
+     {
+         margin-top: 3.2%;
+         height: 100px;
+         margin-bottom: 5%;
+     }
+
+    .stripe_form #card_data input
+    {
+        margin-bottom: -2%;
+        margin-left: -3%;
+        width: 105%;
+    }
+
+    .card_input
+    {
+        margin-bottom: 5%;
+    }
+
+    .disclaimer_info
+    {
+        padding-bottom: 5%;
+    }
+
+    #pricing_title, #availability_title
+    {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    #disclaimer
+    {
+        padding-top: 5%;
+    }
+
+    .success,
+    .error
+    {
+        top:12%;
+    }
+
+    .close
+    {
+        top:0;
+        right: -70px;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width: 1024px) and (orientation: landscape)
+{
+    #banner img {
+        margin-top: -0.1%;
+        height: 150px;
+        margin-bottom: 5%;
+    }
+
+    .add button
+    {
+        left: 195px;
+    }
+
+    #title h1
+    {
+        margin-top: 12%;
+    }
+
+    #link_to_booking
+    {
+        left:0;
+    }
+
+    .success,
+    .error
+    {
+        top:6.7%;
+    }
+}
+

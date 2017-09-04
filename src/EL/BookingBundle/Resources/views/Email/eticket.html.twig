@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            h1
+            {
+                margin-left: 2%;
+            }
+            .intro
+            {
+                text-align: justify;
+            }
+            #emailContainer
+            {
+                width: 100%;
+            }
+            #bodyTable
+            {
+                height: 100%;
+                width: 100%;
+                border-collapse: collapse;
+            }
+            #order_ref
+            {
+                font-size: 0.8em;
+                margin: 0;
+            }
+            img
+            {
+                float: left;
+                margin-top: 1.2%;
+            }
+            #emailBody
+            {
+                margin-top: -20px;
+            }
+            ul
+            {
+            list-style-type: none;
+            padding: 0;
+            }
+            li
+            {
+                margin-left: 0;
+            }
+            #emailTickets
+            {
+               font-size: 0.9em;
+               border-top: solid 1px #c3c3c3;
+               border-bottom: solid 1px #c3c3c3 ;
+            }
+            #ticket_head
+            {
+                background-color:#7b7b7b;
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            .ref
+            {
+                font-size:0.8em;
+                padding-left: 5%;
+            }
+            @media screen and (max-width: 767px)
+            {
+                #emailTickets table
+                 {
+                    width: 100%;
+
+                }
+
+                #ticket_head
+                {
+                    display: none;
+                }
+
+
+                #names
+                {
+                    background-color:#7b7b7b;
+                    color: #FFFFFF;
+                }
+
+                #emailTickets tbody td
+                {
+                    display: block;
+                }
+
+                .ref
+                {
+                    padding-left: 0;
+                }
+
+                img
+                {
+                    margin-top: 1.5%;
+                }
+            }
+            @media screen and (min-width: 1824px)
+            {
+                img
+                {
+                    margin-top: 0.8%;
+                }
+            }
+        </style>
+    </head>
+    <table border="0" cellpadding="0" cellspacing="20"  id="bodyTable">
+        <tr>
+            <td valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" id="emailContainer">
+                    <tr>
+                        <td>
+                           <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailHeader">
+                               <tr>
+                                   <td valign="top">
+                                       <h1>
+                                           <i><img height="20" width="32" src="{{ image_logo }}"></i>Musée du louvre
+                                       </h1>
+                                   </td>
+                               </tr>
+                           </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="5" width="100%" id="emailBody">
+                                <tr>
+                                    <td valign="top">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <ul id="order_ref">
+                                                        <li>{{ billing.token }}</li>
+                                                        <li>Reférence client :{{ billing.stripeToken }}</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="intro">
+                                            <h2>Bonjour {{ billing.name }} {{ billing.surname }},</h2>
+                                            <p>cet email contient l'ensemble des détails de votre commande,
+                                                nous avons hâte de vous recvoir le {{ visit_day }}  pour votre viste au musée du Louvre.</p>
+                                             <p>Lors de votre visite présenter le qr code joint à ce mail et penser à vous munir des pièces vous permettant de
+                                                 justifier des tarifs appliquer à votre commande.</p>
+                                        </div>
+                                            <h3>Détails de votre commande</h3>
+                                            <ul>
+                                                <li>Nombre de billets   : <strong>{{ billing.numberOfTickets}}</strong></li>
+                                                <li>Billets valable le  : <strong>{{ visit_day }}</strong></li>
+                                                <li>Prix de la commande : <strong>{{ billing.price }} €</strong></li>
+                                            </ul>
+                                        <table border="0" cellspacing="0" width="100%" id="emailTickets">
+                                           <tr id="ticket_head">
+                                               <td>Porteur</td>
+                                               <td>Valable le</td>
+                                               <td>Type de billet</td>
+                                               <td class="pricing_type">Prix</td>
+                                               <td class="ref">Référence</td>
+                                           </tr>
+                                              {% for ticket in ticket_list  %}
+                                            <tr>
+                                                <td id="names">{{ ticket.name }} {{ ticket.surname }}</td>
+                                                <td>{{ visit_day }}</td>
+                                                <td>{{ ticket.timeAccessType }} ,{{ ticket.priceType }}</td>
+                                                <td class="pricing_type">{{ ticket.price }} €</td>
+                                                <td class="ref">{{ ticket.token }}</td>
+                                            </tr>
+                                                {% endfor %}
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</html>
+
+

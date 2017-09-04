@@ -1,0 +1,3 @@
+el_booking:
+    resource: "@ELBookingBundle/Resources/config/routing.yml"
+    prefix:   /

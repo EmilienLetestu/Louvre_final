@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Musée du Louvre{% endblock %}</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/7b481cde6c.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="https://code.jquery.com/ui/1.12.1/themes/overcast/jquery-ui.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png"  href={{ asset("favicon.ico") }}>
+        <script src="https://use.fontawesome.com/c205be707c.js"></script>
+        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{ path('accueil_billetterie') }}" ><i id="logo"><img height="20" width="32" src="{{ asset("images/logo_pyramide_accueil.png") }}"></i> Musée du Louvre</a>
+                </div>
+            </div>
+        </nav>
+        <div class="page-wrap">
+            {% block body %}
+
+            {% endblock %}
+
+            {% block javascripts %}
+                <script src="{{ asset("CustomJs/main.js") }}"></script>
+            {% endblock %}
+
+            {% block stylesheets %}
+                <link href="{{ asset("CustomCss/main.css") }}" type="text/css" rel="stylesheet">
+            {% endblock %}
+            <div class="col-sm-12 disclaimer_info">
+                <p>Le musée du Louvre est ouvert tous les jours, sauf les mardis et les  1 er mai, 1 er novembre et 25 décembre, de 9h à 18h,
+                    jusqu'à 21h45 les mercredis et vendredis,à l’exception des jours fériés. La fermeture des salles débute à 17h30 et à 21h30 les mercredis et vendredis. </p>
+                <p>Le billet acheté en ligne est horodaté et nominatif, un document d’identité peut être demandé.
+                    Il est valable exclusivement pour la prestation, la date et à compter de l'heure mentionnée. Il ne constitue pas un coupe file mais permet un accès à la pyramide
+                    du Louvre la demi-heure. En cas de non-respect de ce créneau horaire, le porteur du billet est soumis aux mêmes conditions
+                    d'accès et d'attente que les visiteurs sans billet.</p>
+            </div>
+            <div class="footer col-sm-12">
+                <p class="follow">Pour ne jamais manquer un évènement ou une exposition, suivez-nous</p>
+                <div class="btn-group col-sm-12">
+                    <button class="btn btn-twiter">
+                        <span class="fa fa-twitter-square fa-2x"></span>
+                    </button>
+                    <button class="btn btn-facebook">
+                        <span class="fa fa-facebook-square fa-2x"></span>
+                    </button>
+                    <button class="btn btn-google">
+                        <span class="fa fa-google-plus-square fa-2x"></span>
+                    </button>
+                </div>
+                <a id="legal_notice">Mentions légales</a>
+            </div>
+        </div>
+    </body>
+</html>

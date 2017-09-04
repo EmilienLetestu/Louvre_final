@@ -1,0 +1,62 @@
+services:
+    el_booking.tools:
+        class: EL\BookingBundle\Managers\Tools
+
+    el_booking.museumPolicy:
+        class: EL\BookingBundle\Services\MuseumPolicy
+        arguments:
+         - "@session"
+         - "@doctrine.orm.entity_manager"
+         - "@el_booking.tools"
+
+    el_booking.tempOrderManager:
+        class: EL\BookingBundle\Managers\TempOrderManager
+        arguments:
+         - "@session"
+         - "@form.factory"
+         - "@el_booking.museumPolicy"
+         - "@el_booking.tools"
+
+    el_booking.ticketManager:
+         class: EL\BookingBundle\Managers\TicketManager
+         arguments:
+         - "@session"
+         - "@doctrine.orm.entity_manager"
+         - "@request_stack"
+         - "@el_booking.museumPolicy"
+         - "@el_booking.tools"
+         - "@form.factory"
+
+    el_booking.stripeCheckOut:
+        class: EL\BookingBundle\Services\StripeCheckOut
+        arguments:
+         - "@doctrine.orm.entity_manager"
+         - "@kernel"
+         - "@session"
+
+    el_booking.saveOrder:
+        class: EL\BookingBundle\Services\SaveOrder
+        arguments:
+         - "@doctrine.orm.entity_manager"
+         - "@session"
+         - "@el_booking.tools"
+
+    el_booking.mail:
+        class: EL\BookingBundle\Services\Mail
+        arguments:
+        - "@doctrine.orm.entity_manager"
+        - "@mailer"
+        - "@twig"
+        - "@session"
+
+    el_booking.billingManager:
+        class: EL\BookingBundle\Managers\BillingManager
+        arguments:
+        - "@form.factory"
+        - "@el_booking.stripeCheckOut"
+        - "@el_booking.saveOrder"
+        - "@el_booking.mail"
+        - "@session"
+        - "@el_booking.museumPolicy"
+
+
