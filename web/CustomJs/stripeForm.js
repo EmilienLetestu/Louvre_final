@@ -9,11 +9,12 @@ $(document).ready(function() {
     var url_split = url.split('/');
     if (url_split[5] == 'payer-commande')
     {
-        var key = 'pk_live_6pvpUWEwyv5gAizHDS6ZnRXC';
+        //remove key to commit
+        var key = '';
     }
     else
-    {
-        var key = 'pk_test_wFzRigZgp4pJtcMHnQF04SdF';
+    {   //remove key to commit
+        var key = '';
     }
 
     Stripe.setPublishableKey(key);
